@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rv_Food_Item_Details_Activity">
+
+    <ImageView
+        android:id="@+id/foodItemImg"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/fucka_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodItemImg">
+
+        <TextView
+            android:id="@+id/foodItemTitle"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="6dp"
+            android:text="@string/item_name"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/foodItemName"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="6dp"
+            android:text="@string/fucka"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="150dp"
+            android:paddingTop="6dp"
+            android:src="@drawable/star" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutItem"
+        android:id="@+id/linearLayoutPrice">
+
+        <TextView
+            android:id="@+id/foodItemPriceTitle"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:text="@string/price"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/foodItemPrice"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:text="@string/_60_tk"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutPrice">
+
+        <TextView
+            android:id="@+id/foodItemCatTitle"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:text="@string/category"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/foodCatName"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:text="@string/fast_food"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

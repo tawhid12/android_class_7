@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/fucka_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/foodItemImgThumb"
+        />
+
+    <TextView
+        android:id="@+id/foodItemTitle"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="6dp"
+        android:text="@string/item_name"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodItemImgThumb" />
+
+    <TextView
+        android:id="@+id/foodItemName"
+        style="@style/TextAppearance.AppCompat.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="6dp"
+        android:text="@string/fucka"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/foodItemTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/foodItemTitle"
+        app:layout_constraintTop_toTopOf="@+id/foodItemTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

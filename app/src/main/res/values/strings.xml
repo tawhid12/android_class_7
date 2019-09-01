@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Restaurant</string>
+    <string name="item_name">Item Name :</string>
+    <string name="fucka">Fucka</string>
+    <string name="price">Price :</string>
+    <string name="_60_tk">60 TK</string>
+    <string name="view_details">View Details</string>
+    <string name="category">Category :</string>
+    <string name="fast_food">Fast Food</string>
+</resources>
