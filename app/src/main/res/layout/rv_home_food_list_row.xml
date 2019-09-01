@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/burger_mini"
+        android:theme="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24dp"
+        android:paddingLeft="14dp"
+        android:paddingStart="14dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="160 BDT"
+        android:theme="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="20dp"
+        android:paddingLeft="14dp"
+        android:paddingStart="14dp"/>
+
+</LinearLayout>
